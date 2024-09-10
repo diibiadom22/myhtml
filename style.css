@@ -1,0 +1,347 @@
+/* this is for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* this is a universal selector for all text on the html document */
+* {
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* this is for custom fonts */
+/* @font-face {
+    font-family: "myhtml-font";
+    src: url("./fonts/MonumentExtended-Ultrabold.otf");
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.overall, footer {
+    background: #2F1893;
+    padding-bottom: 40px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.site-nav ul {
+    display: flex;
+}
+
+.site-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px */
+
+    margin: 10px 20px;
+    line-height: 2.2;
+}
+
+.site-nav ul li {
+    list-style: none;
+}
+
+.btn, .hero-btn, .feature-footer button {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgb(146, 142, 142);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: red;
+    cursor: pointer;
+}
+
+.logo {
+    margin-top: 22px;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.hero-section p {
+    color: rgb(199, 194, 194);
+    font-size: 18px;
+}
+
+form {
+    padding-bottom: 30px;
+}
+
+.form-control, .fi, .f2, .fi3, .f4 {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 10px 25px;
+    border: 1px solid rgb(112, 105, 105);
+    border-radius: 20px;
+    color: #fff;
+    width: 246px;
+}
+
+.hero-btn {
+    border: 0;
+    background: #25DAC5;
+    padding: 10px 20px;
+}
+
+small {
+    color: rgb(112, 105, 105);
+}
+
+.question-section h2 {
+    text-align: center;
+    color: #1E0E62;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-content h4 {
+    color: #1E0E62;
+}
+
+.question-section {
+    margin: 45px 35px;
+}
+
+.question-content p {
+    color: rgb(167, 163, 163);
+}
+
+.feature-top {
+    margin-bottom: 40px;
+}
+
+.feature-section {
+    background-image: url("./images/Image.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 25px 35px 45px;
+
+}
+
+
+.feature-top h2, .feature-top p, .feature-body h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.feature-top p, .feature-body p {
+    color: rgb(175, 170, 170);
+}
+
+.feature-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-card-content {
+    text-align: center;
+    border: 1px solid rgb(175, 170, 170);
+    padding: 20px 22px 30px;
+    border-radius: 10px;
+}
+
+.feature-head img {
+    width: 35px;
+}
+
+.f1 {
+    width: 18px !important;
+}
+
+.feature-footer button {
+    background: #E93A7D;
+}
+
+label {
+    display: block;
+    margin: 12px 12px 12px 0;
+    color: #1E0E62;
+    font-weight: 600;
+    text-align: left;
+}
+
+.form-section {
+    margin: 60px  22%;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #1E0E62;
+}
+
+.form-item, .form-item2 {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+
+.form-item2 {
+    gap: 46px;
+}
+
+.fi, .f2, .fi3, .f4 {
+    border: 1px solid rgb(202, 197, 197);
+    color: #222;
+}
+
+.f2 {
+    width: 90px;
+}
+
+.fi3 {
+    width: 400px;
+}
+
+.f4 {
+    width: 60px;
+    border-radius: 47% !important;
+    padding: 13px 5px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.form-logo, .conditions {
+    display: flex;
+    gap: 10px
+}
+
+.form-logo p {
+    color: rgb(202, 197, 197);
+}
+
+.form-btn button {
+    margin-top: 20px;
+    width: 110px;
+}
+
+.form-body {
+    width: 105%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 40px;
+}
+
+.call-to-action {
+    margin-top: 20px;
+}
+.call-to-action button {
+    background: #E93A7D;
+}
+
+.logo p {
+    color: #fff;
+    font-weight: 500;
+    display: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    header, .site-nav ul, footer, .feature-card, .content, .form-item, .form-item2, .form-footer {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 0 25px;
+    }
+
+    .nav-ul {
+        padding: 0;
+    }
+
+    .form-section {
+        margin: 33px 0;
+    }
+
+    .feature-card-content {
+        margin-bottom: 20px;
+    }
+
+    svg {
+        margin-top: -10px
+    }
+
+    .site-nav, br {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo p {
+        display: block;
+    }
+
+    .logo img {
+        margin-top: 22px;
+    }
+
+    .hero-section {
+        margin-top: 40px;
+    }
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        padding: 20px;
+    }
+
+    .hero-btn {
+        width: 294px;
+        margin: 10px 0;
+    }
+
+    .fi3, .f2, .f3, .f4, .fi {
+        width: 100%;
+    }
+
+    .f4 {
+        border-radius: 25px !important;
+        width: 255px;
+    }
+
+    .form-body {
+        padding: 0 20px;
+        width: 80%;
+    }
+
+    .form-btn button {
+        width: 113%;
+    }
+}
+
